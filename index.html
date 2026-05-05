@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Password Security Analyzer</title>
+<link rel="stylesheet" href="./Passward.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🔐 Password Security Analyzer</h2>
+    <input type="password" id="password" placeholder="Enter your password" oninput="checkPassword()" />
+    
+    <div class="strength-bar">
+        <div id="strength" class="strength"></div>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <ul class="features">
+        <li id="length">✔ At least 8 characters</li>
+        <li id="number">✔ Contains number</li>
+        <li id="special">✔ Contains special character</li>
+        <li id="upper">✔ Contains uppercase letter</li>
+    </ul>
+</div>
+</body>
+<script src="./Passward.js"></script>
+</html>
